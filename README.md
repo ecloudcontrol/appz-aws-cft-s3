@@ -6,7 +6,10 @@ This AppZ Stack creates and manages an AWS S3 bucket using AppZ Platform. To lea
 
 AWS S3 is most popular object store solution and has become de-facto object storage standard in the industry. 
 
-### How to use this stack.
+### Before you begin
+
+
+### How to use this stack
 
 
 ### Verification
