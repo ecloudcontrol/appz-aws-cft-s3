@@ -1,0 +1,39 @@
+app:
+  name: AWS Workload S3
+  code: AWSWORKLOAD-S3
+  notify: appzdev@cloudbourne.co
+
+build:
+  version: 0.2
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: aws-0.2
+  image_name: alpha/aws-0.2-s3
+
+deploy:
+  context: alpha/DEV
+  replicas: 1
+
+monitor:
+  notify: appzops@cloudbourne.co      
+
+properties:
+# AppZ Ansible Playbook 
+  APPZ_PLAYLIST: aws_cft_s3
+  PLAY_HOST: 127.0.0.1
+  
+# AWS
+  AWS_ACCESS_KEY:
+    vault: AWS_ACCESS_KEY
+  AWS_SECRET_KEY:
+    vault: AWS_SECRET_KEY
+  AWS_REGION: us-east-2
+
+# S3
+  S3_STACK_NAME: appz-AWS-CFT-S3
+  S3_BUCKETNAME: appz-bucket-appz
+
+# common properties  
+  APPZ_TEARDOWN_TOKEN: 20200721-1655
+  revision : 06
