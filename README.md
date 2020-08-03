@@ -1,4 +1,4 @@
-### AppZ Stack to create and manage AWS S3
+## AppZ Stack to create and manage AWS S3
 
 Welcome to AppZ Stacks! AppZ Stacks are curated images to build and manage application/infrastructure on premise or Cloud. 
 
@@ -6,12 +6,12 @@ This AppZ Stack creates and manages an AWS S3 bucket using AppZ Platform. To lea
 
 AWS S3 is most popular object store solution and has become de-facto object storage standard in the industry. 
 
-## How to use this stack.
+### How to use this stack.
 
 
-## Verification
+### Verification
 
 
-## Maintenance
+### Maintenance
 
-## About Cloud Control
+### About Cloud Control
